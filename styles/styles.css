@@ -1,3 +1,117 @@
-.logo {color: #2196F3;} 
-.logo-dark {color: #000000;}
-.logo-light {color: #FFFFFF}
+:root {
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --accent-text-color: #2196f3;
+  --logo-color-light: #ffffff;
+  --logo-color-dark: #000000;
+  --background-one: #2f303a;
+  --background-two: #f5f4fa;
+}
+
+body {
+  color: var(--primary-text-color);
+  background-color: #fff;
+  font-family: "Raleway", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+.logo {
+  color: var(--accent-text-color);
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+}
+.logo-dark {
+  color: var(--logo-color-dark);
+}
+.logo-light {
+  color: var(--logo-color-light);
+}
+ul {
+  list-style: none;
+}
+.site-nav .link.current,
+.site-nav .link:hover,
+.site-nav .link:focus,
+.contacts .contacts-link:active,
+.contacts .contacts-link:hover,
+.contacts .contacts-link:focus {
+  color: var(--accent-text-color);
+}
+
+.portfolio .button:hover,
+.portfolio .button:focus,
+.portfolio .button:active {
+  background-color: var(--accent-text-color);
+}
+
+.portfolio .button:hover,
+.portfolio .button:focus,
+.portfolio .button:active {
+  color: var(--logo-color-light);
+}
+
+.button-hero {
+  background-color: var(--accent-text-color);
+  color: var(--logo-color-light);
+}
+.contacts .contacts-link,
+.section-text {
+  color: var(--secondary-text-color);
+}
+.contacts .contacts-link {
+  -webkit-animation: none;
+}
+
+.address {
+  font-style: normal;
+  color: var(--logo-color-light);
+}
+.contacts .contacts-link {
+  text-decoration: none;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+}
+.site-nav .link {
+  text-decoration: none;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+}
+.button,
+.button-hero {
+  cursor: pointer;
+}
+.hero-section {
+  background-color: var(--background-one);
+}
+.hero-title {
+  color: var(--logo-color-light);
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.our-team-section {
+  background-color: var(--background-two);
+}
+.footer {
+  background-color: var(--background-one);
+}
