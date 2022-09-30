@@ -20,7 +20,7 @@ body {
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
-  line-height: 31px;
+  line-height: 1.2;
   letter-spacing: 0.03em;
 }
 .logo-dark {
@@ -45,12 +45,30 @@ ul {
 .portfolio .button:focus,
 .portfolio .button:active {
   background-color: var(--accent-text-color);
-}
-
-.portfolio .button:hover,
-.portfolio .button:focus,
-.portfolio .button:active {
   color: var(--logo-color-light);
+}
+.portfolio .button {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+}
+.section-portfolio .section-text {
+  font-family: "Roboto";
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
+}
+.section-portfolio .title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.section-portfolio .title.capitalize {
+  text-transform: capitalize;
 }
 
 .button-hero {
@@ -61,41 +79,100 @@ ul {
 .section-text {
   color: var(--secondary-text-color);
 }
+.our-features .section-text {
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+.our-features .title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.our-works {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+}
+
 .contacts .contacts-link {
   -webkit-animation: none;
+}
+
+.our-team-section .titlie {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}
+.our-team-section .section-text {
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}
+.our-team-section .main-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
 }
 
 .address {
   font-style: normal;
   color: var(--logo-color-light);
 }
+.address .contacts-map {
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: var(--logo-color-light);
+}
 .contacts .contacts-link {
   text-decoration: none;
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.1;
   letter-spacing: 0.02em;
 }
 .site-nav .link {
   text-decoration: none;
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.1px;
   letter-spacing: 0.02em;
 }
 .button,
 .button-hero {
   cursor: pointer;
 }
+.button-hero {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  background: #188ce8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
 .hero-section {
   background-color: var(--background-one);
 }
 .hero-title {
   color: var(--logo-color-light);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.35;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 .visually-hidden {
   position: absolute;
@@ -109,6 +186,7 @@ ul {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
 .our-team-section {
   background-color: var(--background-two);
 }
