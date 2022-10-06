@@ -15,7 +15,15 @@ body {
   font-style: normal;
   font-weight: 400;
 }
-.logo {
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.head .logo {
+}
+.container .logo {
   color: var(--accent-text-color);
   font-family: "Raleway", sans-serif;
   font-style: normal;
@@ -24,14 +32,36 @@ body {
   line-height: 1.2;
   letter-spacing: 0.03em;
 }
+.container {
+  width: 1200px;
+  padding-bottom: 94;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  outline: 2px solid #188ce8;
+}
+.container-hero {
+  width: 1600;
+  height: 600;
+}
+
 .logo-dark {
   color: var(--logo-color-dark);
 }
 .logo-light {
   color: var(--logo-color-light);
 }
-ul {
+* ul {
   list-style: none;
+  margin-top: 0;
+}
+*img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 .site-nav .link.current,
 .site-nav .link:hover,
@@ -73,6 +103,11 @@ ul {
   background-color: var(--accent-text-color);
   color: var(--logo-color-light);
 }
+.contacts {
+  margin-top: 0%;
+  margin-bottom: 0%;
+}
+
 .contacts .contacts-link,
 .section-text {
   color: var(--secondary-text-color);
@@ -81,6 +116,8 @@ ul {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
+  margin-top: 0;
+  padding-bottom: 94px;
 }
 .our-features .title {
   font-weight: 700;
@@ -88,12 +125,22 @@ ul {
   line-height: 1.1;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  padding-bottom: 10px;
+  margin: 0;
+}
+.first-title {
+  padding-top: 94px;
 }
 .our-works {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.1;
   letter-spacing: 0.03em;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+.our-works-img {
+  padding-bottom: 94px;
 }
 
 .contacts .contacts-link {
@@ -148,10 +195,11 @@ ul {
   cursor: pointer;
 }
 .button-hero {
+  display: inline-block;
+  padding: 10px 32px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
-  display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
@@ -159,12 +207,18 @@ ul {
   background: #188ce8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  margin-bottom: 200px;
+  min-width: 216px;
 }
 
 .hero-section {
   background-color: var(--background-one);
+  text-align: center;
 }
 .hero-title {
+  margin-top: 0%;
+  margin-bottom: 30px;
+  padding-top: 200px;
   color: var(--logo-color-light);
   font-weight: 900;
   font-size: 44px;
